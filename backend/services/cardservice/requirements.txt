@@ -1,0 +1,7 @@
+Flask[async]
+flask-cors
+pydantic
+pydantic-settings
+sqlalchemy
+asyncpg
+PyJWT

@@ -1,0 +1,11 @@
+Flask[async]
+flask-cors
+pydantic
+pydantic[email]
+pydantic-settings
+sqlalchemy
+aiohttp
+passlib[bcrypt]
+bcrypt==4.0.1
+PyJWT
+asyncpg
