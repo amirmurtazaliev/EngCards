@@ -26,6 +26,7 @@ def create_token(
         "user_id": str(user.id),
         "email": user.email,
         "is_verified": user.is_verified,
+        "type": "access",
         "exp": expires_at,
     }
 

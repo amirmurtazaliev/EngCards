@@ -1,4 +1,6 @@
 import uuid
+from datetime import timedelta
+
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -14,7 +16,7 @@ class UserService:
         self.pwd_acts = Password()
     
     def set_auth_cookies(self, response, user) -> None:
-        access_token = create_token(user)
+        access_token = create_token(user, timedelta(minutes=10))
 
         response.set_cookie(
             key=settings.access_cookie_name,
